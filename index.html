@@ -13,9 +13,9 @@
             font-size: 36px;
             vertical-align:middle;
             text-align: center;
-            height: auto;
-            padding-left:52px;
+                        
             margin:5px;
+            margin-bottom:60px;
             color:#e3316b;           
             position: relative;
         }
@@ -26,25 +26,126 @@
             width:100%;
             position: absolute;
         }    
-    div.container
+    div.internal_page
         {
             padding:10px;            
             background-color: white;
             border-radius: 4px;
-            width:1200px;
+            width:1000px;
             clear: both;
             margin-left:auto;
             margin-right:auto;
         }
+    div#intro
+        {
+            font-size: normal;
+            color:#333;
+            font-size:14px;
+        }
+
+    div.item
+        {
+            float:left;
+            width: 250px;
+            background-color: black;
+            color:white;
+            margin:10px;
+            padding-top:0;
+            padding-bottom:0;
+            padding-left:0;
+            padding-right:10px;
+            border: 2px solid #DDD;
+            border-radius: 4px;            
+        }
+
+    .container::after
+        {
+            
+            content: "";
+            display: table;
+            clear:both;
+        }
+
+    img.immagine
+        {
+            float:left;
+            height: 80px;
+            width: 80px;
+        }
+
+    h2.title
+        {
+            font-size: 20px;
+            font-weight: bold;
+            font-stretch: expanded;
+        }
+    p.type
+        {
+            font-size: 12px;
+            font-weight: normal;
+        }
+    p.email
+        {
+            font-size: 12px;
+            font-weight: normal;
+            color:aqua;
+        }
    
 </style>
-<body>
-    
+<body>    
     <div class="full_page">        
-        <div class="container">
-            <h1 class="header_class" >Meet our team</h1>    
-            <div class="clearfix">
-                prova   
+        <div class="internal_page">
+            <main>
+                <h1 class="header_class" >Meet our team</h1>    
+            </main>
+
+            <div id="intro" class="container">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.   
+            </div>
+            <div class="container">            
+                <div class="item">
+                    <section>
+                        <img src="./img/male1.png" class="immagine" />
+                        <h2>Marco Bianchi</h2>
+                        <p class="type">Designer</p>
+                        <p class="email">marcobianchi@team.com</p>
+                    </section>                    
+                </div>
+                <div class="item">
+                    <section>
+                        <img src="./img/male2.png" class="immagine" />
+                        Prova
+                    </section>
+                    
+                </div>
+                <div class="item">
+                    <section>
+                        <img src="./img/male3.png" class="immagine" />
+                        Prova
+                    </section>
+                    
+                </div>
+                <div class="item">
+                    <section>
+                        <img src="./img/female1.png" class="immagine" />
+                        Prova
+                    </section>
+                    
+                </div>
+                <div class="item">
+                    <section>
+                        <img src="./img/female2.png" class="immagine" />
+                        Prova
+                    </section>
+                    
+                </div>
+                <div class="item">
+                    <section>
+                        <img src="./img/female3.png" class="immagine" />
+                        Prova
+                    </section>
+                    
+                </div>
             </div>
         </div>
     </div>
